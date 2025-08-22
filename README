@@ -1,50 +1,49 @@
 # ⚡ EV Model Popularity & Trend Analysis Dashboard
 
-An **interactive EV adoption analytics dashboard** built with **Streamlit** and **Plotly**—now featuring **Year-over-Year growth**, **forecasting**, and **geospatial mapping**.
+An **interactive EV adoption analytics dashboard** built with **Streamlit** and **Plotly** — featuring **Year-over-Year growth**, **forecasting**, and **geospatial mapping**.
+
+![Dashboard Preview](images/dashboard_overview.png)
 
 ---
 
 ## 🚀 Features
 
-- **Smart Filters**: Drill down by _State, Make, Model, Model Year_, and select the **Top N models**.
+- **Smart Filters**: Filter by _State, Make, Model, Model Year_ and select the **Top N models**
 - **Visual Exploration**:
   - 📊 Top Makes and Make-Model combinations
-  - 🌎 EV registration counts by State (bar chart + U.S. choropleth map)
+  - 🌎 EV registration counts by state (bar chart + U.S. choropleth map)
   - 📈 Year-over-Year growth percentage table
-  - 🔮 Registration forecasting using **Prophet**, with a linear regression fallback
+  - 🔮 Forecasting with **Prophet**, with linear regression fallback
   - 🔥 Heatmap: Model × Year (log-scaled)
-- **Rich Interactivity**: Fast visualization for large datasets with real-time updates.
-- **CSV Export**: Download the data behind every chart—even forecasts and growth metrics.
+- **Rich Interactivity**: Fast, responsive visualizations for large datasets
+- **CSV Export**: Download data behind all charts, including forecasts and growth metrics
 
 ---
 
 ## 📂 Dataset
 
-- **Source**: Electric Vehicle Population Data (WA Department of Licensing) :contentReference[oaicite:0]{index=0}
-- **Scope**: Records for Battery Electric Vehicles (BEVs) and Plug-in Hybrid EVs across Washington State.
-- **Fields** include: `Make`, `Model`, `Model Year`, `State`, `County`, etc.
+- **Source**: [WA Department of Licensing – Electric Vehicle Population Data](https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/muir-wid6)
+- **Scope**: Battery Electric Vehicles (BEVs) and Plug-in Hybrid EVs registered in Washington State
+- **Fields Include**: `Make`, `Model`, `Model Year`, `State`, `County`, etc.
 
 ---
 
 ## 🖥️ Live Demo
 
-- Visit the live version here: **[Streamlit Cloud Deployment](https://share.streamlit.io/skyline180/EV-Dashboard-Streamlit)**
-- Preview:
-
-<img src="images/dashboard_overview.png" width="700"/>
+👉 Try the dashboard live:  
+**[Streamlit Cloud Deployment](https://share.streamlit.io/skyline180/EV-Dashboard-Streamlit)**
 
 ---
 
 ## ⚙️ How to Run Locally
 
 ```bash
-# Clone the repo
+# 1. Clone the repository
 git clone https://github.com/skyline180/EV-Dashboard-Streamlit.git
 cd EV-Dashboard-Streamlit
 
-# Install dependencies
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# Launch the app
+# 3. Launch the app
 streamlit run streamlit_ev_dashboard.py
-```
