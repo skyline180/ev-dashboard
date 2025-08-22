@@ -1,0 +1,50 @@
+# ⚡ EV Model Popularity & Trend Analysis Dashboard
+
+An **interactive EV adoption analytics dashboard** built with **Streamlit** and **Plotly**—now featuring **Year-over-Year growth**, **forecasting**, and **geospatial mapping**.
+
+---
+
+## 🚀 Features
+
+- **Smart Filters**: Drill down by _State, Make, Model, Model Year_, and select the **Top N models**.
+- **Visual Exploration**:
+  - 📊 Top Makes and Make-Model combinations
+  - 🌎 EV registration counts by State (bar chart + U.S. choropleth map)
+  - 📈 Year-over-Year growth percentage table
+  - 🔮 Registration forecasting using **Prophet**, with a linear regression fallback
+  - 🔥 Heatmap: Model × Year (log-scaled)
+- **Rich Interactivity**: Fast visualization for large datasets with real-time updates.
+- **CSV Export**: Download the data behind every chart—even forecasts and growth metrics.
+
+---
+
+## 📂 Dataset
+
+- **Source**: Electric Vehicle Population Data (WA Department of Licensing) :contentReference[oaicite:0]{index=0}
+- **Scope**: Records for Battery Electric Vehicles (BEVs) and Plug-in Hybrid EVs across Washington State.
+- **Fields** include: `Make`, `Model`, `Model Year`, `State`, `County`, etc.
+
+---
+
+## 🖥️ Live Demo
+
+- Visit the live version here: **[Streamlit Cloud Deployment](https://share.streamlit.io/skyline180/EV-Dashboard-Streamlit)**
+- Preview:
+
+<img src="images/dashboard_overview.png" width="700"/>
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/skyline180/EV-Dashboard-Streamlit.git
+cd EV-Dashboard-Streamlit
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch the app
+streamlit run streamlit_ev_dashboard.py
+```
