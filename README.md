@@ -3,7 +3,7 @@
 An **interactive EV adoption analytics dashboard** built with **Streamlit** and **Plotly**—featuring **Year-over-Year growth**, **forecasting**, and **geospatial mapping**.
 
 <p align="center">
-  <img src="images/dashboard_overview.png" width="700" alt="Dashboard Overview">
+  <img src="image/dashboard_overview.png" width="700" alt="Dashboard Overview">
 </p>
 
 ---
@@ -57,4 +57,5 @@ pip install -r requirements.txt
 
 # 3. Launch the Streamlit app
 streamlit run streamlit_ev_dashboard.py
+
 
