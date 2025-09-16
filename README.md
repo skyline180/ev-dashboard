@@ -57,3 +57,4 @@ pip install -r requirements.txt
 
 # 3. Launch the Streamlit app
 streamlit run streamlit_ev_dashboard.py
+
